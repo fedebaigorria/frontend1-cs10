@@ -1,0 +1,159 @@
+*{
+    margin : 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    width: 1024px;
+    margin : auto;
+    left: 0;
+    right: 0;
+}
+
+.descuento
+{
+    background-color: #1CD1B0;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    padding: 10px 0px 10px 10px;
+}
+
+.titulo
+{
+    background: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    padding: 28px 0px 28px 28px;
+    margin-bottom: 99px;
+    position: fixed;
+    height: 100px;
+    width: 1024px;
+    z-index: 10;
+}
+
+header{
+    margin-bottom: 200px;
+}
+
+.cards
+{
+    position: relative;
+    height: 530px;
+}
+
+.card
+{
+    position: absolute;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 530px;
+    margin-left: 32px;
+}
+
+.card-1
+{
+    position: absolute;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 530px;
+    margin-left: 32px;
+    left : 332px; 
+}
+
+.card-2
+{
+    position: absolute;
+    background: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 530px;
+    margin-left: 32px;
+    left : 664px; 
+}
+
+
+.card-header
+{
+    position: relative;
+    top: 0px;
+    margin-bottom: 74px;
+}
+
+.foto
+{
+    position: absolute;
+    top : 128px;
+    left : 90px;
+    border-radius: 50%;
+}
+
+.corazon
+{
+    position: absolute;
+    top : 16px;
+    left : 21px;
+}
+
+.card-contenido
+{
+    position: relative;
+}
+
+.card-contenido h2
+{
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.card-contenido p
+{
+    font-size: 16px;
+    line-height: 19px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+.boton
+{
+    background-color: #00669F; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 129px;
+    height: 49px;
+    padding: 15px;
+    position: relative;
+    margin : auto;
+}
+
+footer{
+    background-color: #00669F;
+    color : white;
+    padding: 16px 0px 16px 16px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 90px;
+}
+
+
