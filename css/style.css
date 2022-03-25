@@ -1,3 +1,10 @@
+/*
+- Medidas relativas en fuentes y elementos estructurales de HTML.
+- Utilizar dos media queries con viewport para tablet y celular.
+- Escribir las propiedades necesarias en las mismas para su adaptación.
+*/
+
+
 *{
     margin : 0px;
     box-sizing: border-box;
@@ -8,14 +15,13 @@ body
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    position: absolute;
-    width: 1024px;
+    width: 80vw;
     margin : auto;
     left: 0;
     right: 0;
 }
 
-.descuento
+header section p
 {
     background-color: #1CD1B0;
     font-size: 15px;
@@ -24,70 +30,53 @@ body
     padding: 10px 0px 10px 10px;
 }
 
-.titulo
+header section h1
 {
     background: #00669F;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-    font-weight: normal;
     font-size: 40px;
     line-height: 47px;
     color: #000000;
-    padding: 28px 0px 28px 28px;
+    padding: 28px 0px 0px 28px;
     margin-bottom: 99px;
     position: fixed;
     height: 100px;
-    width: 1024px;
+    width: 80vw;
     z-index: 10;
 }
 
 header{
-    margin-bottom: 200px;
+    margin-bottom: 180px;
+}
+
+
+img.agregar-super
+{
+    position: fixed;
+    right: 10vw;
+    top: 50vh;
+    width: 60px;
+    z-index: 10;
 }
 
 .cards
 {
-    position: relative;
-    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card
 {
-    position: absolute;
     background: #F3F3F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 300px;
-    height: 530px;
+    height: 630px;
     margin-left: 32px;
+    margin-bottom: 30px;
 }
-
-.card-1
-{
-    position: absolute;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 300px;
-    height: 530px;
-    margin-left: 32px;
-    left : 332px; 
-}
-
-.card-2
-{
-    position: absolute;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 300px;
-    height: 530px;
-    margin-left: 32px;
-    left : 664px; 
-}
-
 
 .card-header
 {
@@ -96,12 +85,21 @@ header{
     margin-bottom: 74px;
 }
 
+.fondo
+{
+    width: 300px;
+    height: 190px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .foto
 {
     position: absolute;
     top : 128px;
     left : 90px;
     border-radius: 50%;
+    width: 120px;
 }
 
 .corazon
@@ -114,6 +112,7 @@ header{
 .card-contenido
 {
     position: relative;
+    height: 25vh;
 }
 
 .card-contenido h2
@@ -125,7 +124,7 @@ header{
 
 .card-contenido p
 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     padding: 16px;
     margin-bottom: 15px;
@@ -153,7 +152,34 @@ footer{
     padding: 16px 0px 16px 16px;
     font-size: 16px;
     line-height: 19px;
-    margin-top: 90px;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
 }
 
+footer img
+{
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
 
+@media (max-width: 912px) 
+{
+    header section p
+    {
+        background-color: #D1891C;
+    }
+
+    header section h1
+    {
+        color: white;
+    }
+
+    footer img
+    {
+        height: 15px;
+        top: 16px;
+    }
+}
